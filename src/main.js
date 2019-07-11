@@ -8,6 +8,18 @@ import App from './App.vue'
 Vue.config.productionTip = false
 Vue.use(vueRouter)
 
+const routes = [
+//   {path: './components/HelloWorld',
+//   component: hello
+// },
+  // {path: ''}
+]
+
+const router = new vueRouter({
+  routes  
+})
+
 new Vue({
   render: h => h(App),
+  router
 }).$mount('#app')
